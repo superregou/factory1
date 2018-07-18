@@ -9,7 +9,7 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.servlet.ServletUtilities;
 import org.jfree.data.category.DefaultCategoryDataset;
-
+//来吧 本地仓库
 public class Bar1 {
 	public static String getBar(HttpSession session) throws IOException{
 		//准备数据集合
