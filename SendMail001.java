@@ -3,21 +3,21 @@ package com.offcn;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-
+//***************
 public class SendMail001 {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 		JavaMailSenderImpl	mailsend=(JavaMailSenderImpl) context.getBean("mailSender");
 	
-		//´´½¨¼òµ¥µÄÓÊ¼ş
+		//åˆ›å»ºç®€å•çš„é‚®ä»¶
 		SimpleMailMessage msg = new SimpleMailMessage();
 		msg.setFrom("hk109@126.com");
 		msg.setTo("hk109@126.com");
-		msg.setSubject("JAVA0115²âÊÔÓÊ¼ş");
-		msg.setText("ºÃºÃÑ§Ï°,ÌìÌìÏòÉÏ!");
+		msg.setSubject("JAVA0115æµ‹è¯•é‚®ä»¶");
+		msg.setText("å¥½å¥½å­¦ä¹ ,å¤©å¤©å‘ä¸Š!");
 		
-		//·¢ËÍÓÊ¼ş
+		//å‘é€é‚®ä»¶
 		
 		mailsend.send(msg);
 		
